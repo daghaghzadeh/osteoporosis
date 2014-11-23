@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tile_back">#007C83</color>
+    <color name="footer_back">#003f66</color>
+    <color name="difer_tile_back">#FD7900</color>
+</resources>
