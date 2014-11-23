@@ -2,7 +2,6 @@ package com.phoenix.osteoporosis.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import com.phoenix.osteoporosis.R;
 
 /**
@@ -15,7 +14,7 @@ public class FakeActivity extends Activity {
 
         setContentView(R.layout.fake_layout);
 
-        Log.d("fakeactivity","hello github");
+
 
     }
 }
