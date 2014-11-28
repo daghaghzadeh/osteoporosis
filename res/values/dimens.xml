@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <dimen name="footer_height" >70dp</dimen>
+    <dimen name="menu_font_size">20sp</dimen>
+    <dimen name="footer_menu_font_size">14sp</dimen>
+    <dimen name="cell_margin">1dp</dimen>
 
 </resources>

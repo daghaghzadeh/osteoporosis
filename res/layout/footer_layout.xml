@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+    <LinearLayout
+            android:background="@color/footer_back"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/footer_height"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/main_layout_footer"
+            android:weightSum="4"
+            android:paddingTop="2dp"
+            >
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="onClick"
+                android:id="@+id/footer_search"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/search"
+                    />
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/search"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/footer_menu_font_size"
+                    android:textColor="@color/menu_text_color"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="onClick"
+                android:id="@+id/footer_send"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/search"
+                    />
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/send"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/footer_menu_font_size"
+                    android:textColor="@color/menu_text_color"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="onClick"
+                android:id="@+id/footer_site"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/search"
+                    />
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/site"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/footer_menu_font_size"
+                    android:textColor="@color/menu_text_color"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:onClick="onClick"
+                android:id="@+id/footer_developer"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/search"
+                    />
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/developer"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/footer_menu_font_size"
+                    android:textColor="@color/menu_text_color"
+                    />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

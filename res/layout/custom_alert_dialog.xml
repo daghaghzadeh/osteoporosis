@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/background_explist_group_icons"
+              android:orientation="vertical" >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_custom_title_bar"
+            android:gravity="center" >
+
+        <TextView
+                android:id="@+id/tvCustomTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Title"
+                android:textColor="#f5f4aa" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/llCustomAlertDialog_Message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+        <TextView
+                android:id="@+id/tvCustomMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Message"
+                android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/llSendAppToOthers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+            <TextView
+                    android:id="@+id/tv_rbSendViaBluetooth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="RB_Message_01"
+                    android:textColor="#000000" />
+
+            <RadioButton
+                    android:id="@+id/rbSendViaBluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:checked="true" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+            <TextView
+                    android:id="@+id/tv_rbSendViaEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="RB_Message_02"
+                    android:textColor="#000000" />
+
+            <RadioButton
+                    android:id="@+id/rbSendViaEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#c4c4c4"
+            android:gravity="center" >
+
+        <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_button_style"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="#f5f4aa" />
+
+        <Button
+                android:id="@+id/btnOk"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_button_style"
+                android:gravity="center"
+                android:text="Ok"
+                android:textColor="#f5f4aa" />
+    </LinearLayout>
+
+</LinearLayout>

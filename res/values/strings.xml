@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">osteoporosis</string>
+    <string name="app_name">درمان پوکی استخوان</string>
+    <string name="moshavere">مشاوره رایگان</string>
+    <string name="avarez">عوارض</string>
+    <string name="alaem">علائم</string>
+    <string name="dalaiel">دلایل</string>
+    <string name="pishgiri">پیشگیری</string>
+    <string name="test">تست تشخیص</string>
+    <string name="tashkhis">آزمایشهای تشخیص</string>
+    <string name="darman">روشهای درمان</string>
+
+    <string name="search">جستجو</string>
+    <string name="send">ارسال نرم افزار</string>
+    <string name="site">وب سایت</string>
+    <string name="developer">تیم توسعه دهنده</string>
+
+    <string name="esteopeni">استئوپنی</string>
+    <string name="dard">درد</string>
+    <string name="shekastegi">شکستگی استخوان</string>
+    <string name="poosidegi_dandan">پوسیدگی دندان</string>
+    <string name="kahesh_ghad">کاهش قد</string>
+    <string name="khamidegi">خمیدگی ستون فقرات</string>
+
+    <string name="varzesh">ورزش</string>
+    <string name="darman_darooie">درمان دارویی</string>
+    <string name="jaigozin_hormoni">درمان جایگزین هورمونی</string>
+    <string name="hormoni">درمان هورمونی</string>
+    <string name="mokamelha">استفاده از مکمل ها</string>
+    <string name="tosie_vizhe">توصیه های ویژه</string>
+
+    <string name="control_vazn">کنترل وزن</string>
+    <string name="rezhim">رژیم غذایی</string>
+    <string name="masraf_daro">کنترل مصرف داروها</string>
+    <string name="bardari">استخوان سازی حین بارداری</string>
+    <string name="tark_adat">ترک عادات مضر</string>
+
+    <string name="dokhaniat">دخانیات</string>
+    <string name="alkol">مصرف الکل</string>
+    <string name="bimariha">انواع بیماریها</string>
+    <string name="masraf_daroo">مصرف برخی داروها</string>
+    <string name="ghabel_pishgiri">قابل پیشگیری</string>
+    <string name="gheir_ghabel_pishgiri">غیرقابل پیشگیری</string>
 </resources>

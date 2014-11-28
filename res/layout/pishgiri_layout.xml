@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+
+    <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:name="com.phoenix.osteoporosis.fragments.FooterFragment"
+            tools:layout="@layout/footer_layout"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/layout_footer"
+            />
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/layout_footer"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    >
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/tile_back"
+                        android:layout_margin="@dimen/cell_margin"
+                        android:padding="5dp"
+                        android:onClick="onClick"
+                        >
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="@string/control_vazn"
+                            android:textColor="@color/menu_text_color"
+                            android:textSize="@dimen/menu_font_size"
+                            />
+                        </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/tile_back"
+                        android:layout_margin="@dimen/cell_margin"
+                        android:padding="5dp"
+                        android:onClick="onClick"
+                        >
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="@string/rezhim"
+                            android:textColor="@color/menu_text_color"
+                            android:textSize="@dimen/menu_font_size"
+                            />
+                        </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/difer_tile_back"
+                    android:layout_margin="@dimen/cell_margin"
+                    android:padding="5dp"
+                    android:onClick="onClick"
+                    >
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="@string/varzesh"
+                        android:textColor="@color/menu_text_color"
+                        android:textSize="@dimen/menu_font_size"
+                        />
+                    </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/tile_back"
+                    android:layout_margin="@dimen/cell_margin"
+                    android:padding="5dp"
+                    android:onClick="onClick"
+                    >
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="@string/tark_adat"
+                        android:textColor="@color/menu_text_color"
+                        android:textSize="@dimen/menu_font_size"
+                        />
+                    </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    >
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/tile_back"
+                        android:layout_margin="@dimen/cell_margin"
+                        android:padding="5dp"
+                        android:onClick="onClick"
+                        >
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="@string/masraf_daro"
+                            android:textColor="@color/menu_text_color"
+                            android:textSize="@dimen/menu_font_size"
+                            />
+                        </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/tile_back"
+                        android:layout_margin="@dimen/cell_margin"
+                        android:padding="5dp"
+                        android:onClick="onClick"
+                        >
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="@string/bardari"
+                            android:textColor="@color/menu_text_color"
+                            android:textSize="@dimen/menu_font_size"
+                            />
+                        </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

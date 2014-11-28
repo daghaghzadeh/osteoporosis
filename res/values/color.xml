@@ -3,4 +3,5 @@
     <color name="tile_back">#007C83</color>
     <color name="footer_back">#003f66</color>
     <color name="difer_tile_back">#FD7900</color>
+    <color name="menu_text_color">#ffffff</color>
 </resources>

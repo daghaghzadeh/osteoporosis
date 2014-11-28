@@ -1,59 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:background="#cccccc"
         >
 
-    <LinearLayout
-            android:background="@color/footer_back"
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/footer_height"
-            android:orientation="horizontal"
+    <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:name="com.phoenix.osteoporosis.fragments.FooterFragment"
+            tools:layout="@layout/footer_layout"
             android:layout_alignParentBottom="true"
             android:id="@+id/main_layout_footer"
-            android:weightSum="4"
-            >
-
-        <Button
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:background="@drawable/search"
-                android:id="@+id/main_search"
-                android:onClick="onClick"
-                />
-
-        <Button
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:background="@drawable/site"
-                android:id="@+id/main_site"
-                android:onClick="onClick"
-                />
-
-        <Button
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:background="@drawable/book"
-                android:id="@+id/main_book"
-                android:onClick="onClick"
-                />
-
-        <Button
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:background="@drawable/sms"
-                android:id="@+id/main_sms"
-                android:onClick="onClick"
-                />
-
-
-    </LinearLayout>
+            />
 
 
     <LinearLayout
@@ -74,18 +36,22 @@
 
             <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="@color/tile_back"
-                    android:layout_margin="5dp"
+                    android:layout_margin="@dimen/cell_margin"
                     android:gravity="center"
+
                     >
 
-                <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/darman"
-                        android:onClick="onClick"
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="@string/app_name"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:textSize="@dimen/menu_font_size"
+                        android:textColor="@color/menu_text_color"
                         />
             </LinearLayout>
 
@@ -94,14 +60,30 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="2"
                     android:background="@color/difer_tile_back"
-                    android:layout_margin="5dp"
-                    android:gravity="center"
+                    android:layout_margin="@dimen/cell_margin"
+
+                    android:onClick="onClick"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    android:id="@+id/main_moshavere"
                     >
 
                 <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
                         android:src="@drawable/moshavere"
+                        />
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="@string/moshavere"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textSize="@dimen/menu_font_size"
+                        android:textColor="@color/menu_text_color"
                         />
             </LinearLayout>
         </LinearLayout>
@@ -120,6 +102,7 @@
                     android:layout_weight="2"
                     android:orientation="vertical"
                     android:weightSum="2"
+                    android:layout_margin="@dimen/cell_margin"
                     >
 
                 <LinearLayout
@@ -127,6 +110,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:weightSum="2"
+
                         >
 
                     <LinearLayout
@@ -134,14 +118,30 @@
                             android:layout_height="fill_parent"
                             android:layout_weight="1"
                             android:background="@color/tile_back"
-                            android:layout_margin="5dp"
+                            android:layout_margin="@dimen/cell_margin"
                             android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:onClick="onClick"
+                            android:id="@+id/main_avarez"
+
                             >
 
                         <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
                                 android:src="@drawable/avarez"
+                                />
+
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:text="@string/avarez"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="@dimen/menu_font_size"
+                                android:textColor="@color/menu_text_color"
                                 />
                     </LinearLayout>
 
@@ -150,14 +150,29 @@
                             android:layout_height="fill_parent"
                             android:layout_weight="1"
                             android:background="@color/tile_back"
-                            android:layout_margin="5dp"
+                            android:layout_margin="@dimen/cell_margin"
                             android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:onClick="onClick"
+                            android:id="@+id/main_alaem"
                             >
 
                         <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:src="@drawable/alaem"
+                                android:layout_weight="2"
+                                />
+
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:text="@string/alaem"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="@dimen/menu_font_size"
+                                android:textColor="@color/menu_text_color"
                                 />
                     </LinearLayout>
 
@@ -176,14 +191,29 @@
                             android:layout_height="fill_parent"
                             android:layout_weight="1"
                             android:background="@color/tile_back"
-                            android:layout_margin="5dp"
+                            android:layout_margin="@dimen/cell_margin"
                             android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:onClick="onClick"
+                            android:id="@+id/main_dalaiel"
                             >
 
                         <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:src="@drawable/maghalat"
+                                android:layout_weight="2"
+                                />
+
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:text="@string/dalaiel"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="@dimen/menu_font_size"
+                                android:textColor="@color/menu_text_color"
                                 />
                     </LinearLayout>
 
@@ -192,14 +222,29 @@
                             android:layout_height="fill_parent"
                             android:layout_weight="1"
                             android:background="@color/tile_back"
-                            android:layout_margin="5dp"
+                            android:layout_margin="@dimen/cell_margin"
                             android:gravity="center"
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:onClick="onClick"
+                            android:id="@+id/main_pishgiri"
                             >
 
                         <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="0dp"
                                 android:src="@drawable/pishgiri"
+                                android:layout_weight="2"
+                                />
+
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:text="@string/pishgiri"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="@dimen/menu_font_size"
+                                android:textColor="@color/menu_text_color"
                                 />
                     </LinearLayout>
 
@@ -213,14 +258,29 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="@color/tile_back"
-                    android:layout_margin="5dp"
+                    android:layout_margin="@dimen/cell_margin"
                     android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:onClick="onClick"
+                    android:id="@+id/main_ravesh_darman"
                     >
 
                 <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ravesh"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/darman"
+                        android:layout_weight="2"
+                        />
+
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/darman"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/menu_font_size"
+                        android:textColor="@color/menu_text_color"
                         />
             </LinearLayout>
 
@@ -239,14 +299,29 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="2"
                     android:background="@color/tile_back"
-                    android:layout_margin="5dp"
+                    android:layout_margin="@dimen/cell_margin"
                     android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:onClick="onClick"
+                    android:id="@+id/main_test"
                     >
 
                 <ImageView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:src="@drawable/test"
+                        android:layout_weight="1"
+                        />
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="@string/test"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/menu_font_size"
+                        android:textColor="@color/menu_text_color"
                         />
             </LinearLayout>
 
@@ -255,14 +330,29 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="@color/tile_back"
-                    android:layout_margin="5dp"
+                    android:layout_margin="@dimen/cell_margin"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:onClick="onClick"
+                    android:id="@+id/main_azmaiesh"
                     >
 
                 <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
                         android:src="@drawable/pezeshk"
                         android:gravity="center"
+                        />
+
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/tashkhis"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/menu_font_size"
+                        android:textColor="@color/menu_text_color"
                         />
             </LinearLayout>
 
