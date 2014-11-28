@@ -24,5 +24,7 @@
         <activity android:name=".activities.DarmanActivity"/>
         <activity android:name=".activities.PishgiriActivity"/>
         <activity android:name=".activities.DalaielActivity"/>
+        <activity android:name=".activities.ConsultationActivity"/>
+        <activity android:name=".activities.SearchActivity"/>
     </application>
 </manifest>

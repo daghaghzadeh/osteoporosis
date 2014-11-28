@@ -82,7 +82,7 @@ public class MainActivity extends Activity {
                 startActivity(intent);
                 break;
             case R.id.main_moshavere:
-                intent = new Intent(view.getContext(), FakeActivity.class);
+                intent = new Intent(view.getContext(), ConsultationActivity.class);
                 startActivity(intent);
                 break;
             case R.id.main_pishgiri:
@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
                 startActivity(intent);
                 break;
             case R.id.footer_search:
-                intent = new Intent(view.getContext(), FakeActivity.class);
+                intent = new Intent(view.getContext(), SearchActivity.class);
                 startActivity(intent);
                 break;
             case R.id.footer_site:

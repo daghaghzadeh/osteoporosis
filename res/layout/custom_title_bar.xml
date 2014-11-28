@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/background_custom_title_bar">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center" 
+        android:gravity="center">
+
+
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/background_back_button_style"
+            android:padding="5dp"
+            android:src="@drawable/arrow_left" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_devider_custom_title" />
+
+        <TextView
+            android:id="@+id/tvCustomTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="Title"
+            android:textColor="#F5F4AA" 
+            android:layout_marginLeft="5dp" 
+            android:layout_marginRight="5dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_devider_custom_title" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/icon"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
