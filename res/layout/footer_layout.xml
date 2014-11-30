@@ -2,7 +2,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:layout_width="wrap_content"
+              android:layout_width="fill_parent"
               android:layout_height="wrap_content">
     <LinearLayout
             android:background="@color/footer_back"
@@ -20,8 +20,9 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:onClick="onClick"
+
                 android:id="@+id/footer_search"
+                android:gravity="center"
                 >
 
             <ImageView
@@ -47,15 +48,16 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:onClick="onClick"
+
                 android:id="@+id/footer_send"
+                android:gravity="center"
                 >
 
             <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:src="@drawable/search"
+                    android:src="@drawable/send"
                     />
 
             <TextView
@@ -74,21 +76,22 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:onClick="onClick"
+
                 android:id="@+id/footer_site"
+                android:gravity="center"
                 >
 
             <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:src="@drawable/search"
+                    android:src="@drawable/about"
                     />
 
             <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:text="@string/site"
+                    android:text="@string/about"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:textSize="@dimen/footer_menu_font_size"
@@ -101,15 +104,16 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:onClick="onClick"
+
                 android:id="@+id/footer_developer"
+                android:gravity="center"
                 >
 
             <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:src="@drawable/search"
+                    android:src="@drawable/developer"
                     />
 
             <TextView

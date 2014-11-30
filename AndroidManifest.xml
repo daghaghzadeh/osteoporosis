@@ -8,9 +8,11 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
-            android:icon="@drawable/icon"
+            android:icon="@drawable/darman"
             android:label="@string/app_name"
             android:theme="@style/theme"
+            android:name=".util.Global"
+
             >
         <activity android:name=".activities.SplashActivity">
             <intent-filter>
@@ -26,5 +28,6 @@
         <activity android:name=".activities.DalaielActivity"/>
         <activity android:name=".activities.ConsultationActivity"/>
         <activity android:name=".activities.SearchActivity"/>
+        <activity android:name=".activities.ArticleActivity"/>
     </application>
 </manifest>

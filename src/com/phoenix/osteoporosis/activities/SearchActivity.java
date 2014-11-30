@@ -18,5 +18,7 @@ public class SearchActivity extends Activity {
     }
 
     public void search(View view) {
+
+
     }
 }

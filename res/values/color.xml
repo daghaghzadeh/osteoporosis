@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="tile_back">#007C83</color>
-    <color name="footer_back">#003f66</color>
-    <color name="difer_tile_back">#FD7900</color>
-    <color name="menu_text_color">#ffffff</color>
+    <color name="background">#ffe2cdb9</color>
+    <color name="tile_back">#fff5eee2</color>
+    <color name="tile_back2">#fff0e5c9</color>
+    <color name="footer_back">#fff0e5c9</color>
+    <color name="difer_tile_back">#ffe76e5d</color>
+    <color name="menu_text_color2">#ffffff</color>
+    <color name="menu_text_color">#ff77715a</color>
 </resources>

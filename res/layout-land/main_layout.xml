@@ -8,7 +8,7 @@
         >
 
     <fragment
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
 
             android:name="com.phoenix.osteoporosis.fragments.FooterFragment"
@@ -83,7 +83,7 @@
                         android:layout_weight="2"
                         android:gravity="center"
                         android:textSize="@dimen/menu_font_size"
-                        android:textColor="@color/menu_text_color"
+                        android:textColor="@color/menu_text_color2"
                         />
             </LinearLayout>
         </LinearLayout>
@@ -202,7 +202,7 @@
                         <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="0dp"
-                                android:src="@drawable/maghalat"
+                                android:src="@drawable/dalaiel"
                                 android:layout_weight="2"
                                 />
 
@@ -298,7 +298,7 @@
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="2"
-                    android:background="@color/tile_back"
+                    android:background="@color/difer_tile_back"
                     android:layout_margin="@dimen/cell_margin"
                     android:gravity="center"
                     android:padding="10dp"
@@ -321,7 +321,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:textSize="@dimen/menu_font_size"
-                        android:textColor="@color/menu_text_color"
+                        android:textColor="@color/menu_text_color2"
                         />
             </LinearLayout>
 
@@ -335,13 +335,14 @@
                     android:padding="10dp"
                     android:onClick="onClick"
                     android:id="@+id/main_azmaiesh"
+                    android:gravity="center"
                     >
 
                 <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:src="@drawable/pezeshk"
+                        android:src="@drawable/azmaiesh_tashkhis"
                         android:gravity="center"
                         />
 

@@ -8,7 +8,7 @@
         >
 
     <fragment
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
 
             android:name="com.phoenix.osteoporosis.fragments.FooterFragment"
@@ -23,6 +23,8 @@
             android:layout_above="@id/layout_footer"
             android:orientation="vertical"
             android:padding="10dp"
+            android:background="@color/background"
+
             >
 
         <LinearLayout
@@ -38,6 +40,8 @@
                     android:layout_weight="1"
                     android:background="@color/tile_back"
                     android:layout_margin="@dimen/cell_margin"
+                    android:onClick="onClick"
+                    android:id="@+id/alaem_osteo"
                     >
 
                 <TextView
@@ -47,6 +51,7 @@
                         android:textColor="@color/menu_text_color"
                         android:text="@string/esteopeni"
                         android:gravity="center"
+
                         />
 
                     </LinearLayout>
@@ -62,15 +67,17 @@
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:background="@color/tile_back"
+                        android:background="@color/difer_tile_back"
                         android:layout_margin="@dimen/cell_margin"
+                        android:onClick="onClick"
+                        android:id="@+id/alaem_dard"
                         >
 
                     <TextView
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:textSize="@dimen/menu_font_size"
-                            android:textColor="@color/menu_text_color"
+                            android:textColor="@color/menu_text_color2"
                             android:text="@string/dard"
                             android:gravity="center"
                             />
@@ -80,15 +87,17 @@
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:background="@color/tile_back"
+                        android:background="@color/difer_tile_back"
                         android:layout_margin="@dimen/cell_margin"
+                        android:onClick="onClick"
+                        android:id="@+id/alaem_shekastegi"
                         >
 
                     <TextView
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:textSize="@dimen/menu_font_size"
-                            android:textColor="@color/menu_text_color"
+                            android:textColor="@color/menu_text_color2"
                             android:text="@string/shekastegi"
                             android:gravity="center"
                             />
@@ -111,6 +120,8 @@
                     android:layout_weight="1"
                     android:layout_margin="@dimen/cell_margin"
                     android:background="@color/tile_back"
+                    android:onClick="onClick"
+                    android:id="@+id/alaem_poosidegi"
                     >
 
                 <TextView
@@ -128,7 +139,9 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:layout_margin="@dimen/cell_margin"
-                    android:background="@color/tile_back"
+                    android:background="@color/tile_back2"
+                    android:onClick="onClick"
+                    android:id="@+id/alaem_ghad"
                     >
 
                 <TextView
@@ -146,7 +159,9 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:layout_margin="@dimen/cell_margin"
-                    android:background="@color/tile_back"
+                    android:background="@color/tile_back2"
+                    android:onClick="onClick"
+                    android:id="@+id/alaem_khamidegi"
                     >
 
                 <TextView

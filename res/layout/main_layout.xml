@@ -5,10 +5,11 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:background="#cccccc"
+
         >
 
     <fragment
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
 
             android:name="com.phoenix.osteoporosis.fragments.FooterFragment"
@@ -24,6 +25,8 @@
             android:orientation="vertical"
             android:layout_above="@id/main_layout_footer"
             android:weightSum="4"
+            android:padding="10dp"
+            android:background="@color/background"
             >
 
         <LinearLayout
@@ -34,23 +37,34 @@
                 android:weightSum="3"
                 >
 
+
             <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:background="@color/tile_back"
+                    android:background="@color/tile_back2"
                     android:layout_margin="@dimen/cell_margin"
                     android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+
 
                     >
 
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/pooki"
+                        />
+
                 <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
                         android:text="@string/app_name"
-                        android:layout_weight="4"
+                        android:layout_weight="1"
                         android:gravity="center"
-                        android:textSize="@dimen/menu_font_size"
+                        android:textSize="15dp"
                         android:textColor="@color/menu_text_color"
                         />
             </LinearLayout>
@@ -69,6 +83,17 @@
                     android:id="@+id/main_moshavere"
                     >
 
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:text="@string/moshavere"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/menu_font_size"
+                        android:textColor="@color/menu_text_color2"
+                        />
+
                 <ImageView
                         android:layout_width="0dp"
                         android:layout_height="fill_parent"
@@ -76,15 +101,7 @@
                         android:src="@drawable/moshavere"
                         />
 
-                <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="fill_parent"
-                        android:text="@string/moshavere"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:textSize="@dimen/menu_font_size"
-                        android:textColor="@color/menu_text_color"
-                        />
+
             </LinearLayout>
         </LinearLayout>
 
@@ -202,7 +219,7 @@
                         <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="0dp"
-                                android:src="@drawable/maghalat"
+                                android:src="@drawable/dalaiel"
                                 android:layout_weight="2"
                                 />
 
@@ -298,7 +315,7 @@
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="2"
-                    android:background="@color/tile_back"
+                    android:background="@color/difer_tile_back"
                     android:layout_margin="@dimen/cell_margin"
                     android:gravity="center"
                     android:padding="10dp"
@@ -321,7 +338,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:textSize="@dimen/menu_font_size"
-                        android:textColor="@color/menu_text_color"
+                        android:textColor="@color/menu_text_color2"
                         />
             </LinearLayout>
 
@@ -329,19 +346,20 @@
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:background="@color/tile_back"
+                    android:background="@color/tile_back2"
                     android:layout_margin="@dimen/cell_margin"
                     android:orientation="vertical"
                     android:padding="10dp"
                     android:onClick="onClick"
                     android:id="@+id/main_azmaiesh"
+                    android:gravity="center"
                     >
 
                 <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:src="@drawable/pezeshk"
+                        android:src="@drawable/azmaiesh_tashkhis"
                         android:gravity="center"
                         />
 

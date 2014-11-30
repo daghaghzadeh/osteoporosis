@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="#ffffff">
+
+    <include
+            layout="@layout/custom_title_bar" />
+
+    <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+        <TextView
+                android:id="@+id/tvArticleContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:textColor="#000000" />
+
+    </ScrollView>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#c4c4c4" >
+
+        <com.phoenix.osteoporosis.custom_button.Class_Custom_Button
+
+                android:id="@+id/btnSendArticle"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Send Article Via Email"
+                android:drawableRight="@drawable/send_app_to_others"
+                android:drawablePadding="10dp"
+                android:background="@drawable/bg_button_style"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:textColor="#aa383b21"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

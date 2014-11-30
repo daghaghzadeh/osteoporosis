@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">درمان پوکی استخوان</string>
+    <string name="app_name">پوکی استخوان</string>
     <string name="moshavere">مشاوره رایگان</string>
     <string name="avarez">عوارض</string>
     <string name="alaem">علائم</string>
@@ -13,6 +13,7 @@
     <string name="search">جستجو</string>
     <string name="send">ارسال نرم افزار</string>
     <string name="site">وب سایت</string>
+    <string name="about">درباره کلینیک</string>
     <string name="developer">تیم توسعه دهنده</string>
 
     <string name="esteopeni">استئوپنی</string>
