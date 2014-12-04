@@ -3,6 +3,7 @@ package com.phoenix.osteoporosis.util;
 import android.app.Application;
 import android.content.Context;
 import android.os.Environment;
+import android.view.LayoutInflater;
 
 import java.io.File;
 
@@ -20,7 +21,7 @@ public class Global extends Application {
     public static final String DIR_DB = DIR_APP + "/db";
     public static final String DIR_APP_TO_SEND = DIR_APP + "/app";
     public static final String DB_NAME = "osteoporosis.sqlite";
-
+    public static  LayoutInflater INFLATER ;
 
     public static Context context;
 
@@ -35,5 +36,7 @@ public class Global extends Application {
         if(!new File(DIR_DB,DB_NAME).exists()){
             resourceHandler.copyDB();
         }
+        INFLATER = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+
     }
 }

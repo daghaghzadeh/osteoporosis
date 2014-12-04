@@ -39,10 +39,11 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="@color/tile_back"
-                    android:layout_margin="@dimen/cell_margin"
+
                     android:onClick="onClick"
                     android:id="@+id/alaem_osteo"
                     >
+
 
                 <TextView
                         android:layout_width="fill_parent"
@@ -54,7 +55,45 @@
 
                         />
 
-                    </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="@dimen/cell_space"
+                    android:layout_height="fill_parent"
+                    />
+
+            <LinearLayout
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    >
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/difer_tile_back"
+
+                        android:onClick="onClick"
+
+                        >
+                </LinearLayout>
+
+                <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/cell_space"
+                        />
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/difer_tile_back"
+                        android:onClick="onClick"
+                        >
+                </LinearLayout>
+
+            </LinearLayout>
 
             <LinearLayout
                     android:layout_width="0dp"
@@ -68,7 +107,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:background="@color/difer_tile_back"
-                        android:layout_margin="@dimen/cell_margin"
+
                         android:onClick="onClick"
                         android:id="@+id/alaem_dard"
                         >
@@ -81,14 +120,19 @@
                             android:text="@string/dard"
                             android:gravity="center"
                             />
-                        </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/cell_space"
+                        />
 
                 <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:background="@color/difer_tile_back"
-                        android:layout_margin="@dimen/cell_margin"
+
                         android:onClick="onClick"
                         android:id="@+id/alaem_shekastegi"
                         >
@@ -101,11 +145,16 @@
                             android:text="@string/shekastegi"
                             android:gravity="center"
                             />
-                        </LinearLayout>
+                </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
+
+        <Space
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/cell_space"
+                />
 
         <LinearLayout
                 android:layout_width="fill_parent"
@@ -118,7 +167,7 @@
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:layout_margin="@dimen/cell_margin"
+
                     android:background="@color/tile_back"
                     android:onClick="onClick"
                     android:id="@+id/alaem_poosidegi"
@@ -132,13 +181,18 @@
                         android:text="@string/poosidegi_dandan"
                         android:gravity="center"
                         />
-                    </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="@dimen/cell_space"
+                    android:layout_height="fill_parent"
+                    />
 
             <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:layout_margin="@dimen/cell_margin"
+
                     android:background="@color/tile_back2"
                     android:onClick="onClick"
                     android:id="@+id/alaem_ghad"
@@ -152,13 +206,18 @@
                         android:text="@string/kahesh_ghad"
                         android:gravity="center"
                         />
-                    </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="@dimen/cell_space"
+                    android:layout_height="fill_parent"
+                    />
 
             <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:layout_margin="@dimen/cell_margin"
+
                     android:background="@color/tile_back2"
                     android:onClick="onClick"
                     android:id="@+id/alaem_khamidegi"
@@ -172,7 +231,7 @@
                         android:text="@string/khamidegi"
                         android:gravity="center"
                         />
-                    </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>

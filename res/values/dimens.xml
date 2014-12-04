@@ -3,7 +3,9 @@
 <dimen name="footer_height" >70dp</dimen>
     <dimen name="menu_font_size">20sp</dimen>
     <dimen name="footer_menu_font_size">14sp</dimen>
-    <dimen name="cell_margin">1dp</dimen>
+    <dimen name="cell_margin">2dp</dimen>
+    <dimen name="inner_cell_margin">0dp</dimen>
+    <dimen name="cell_space">4dp</dimen>
 
 
 </resources>

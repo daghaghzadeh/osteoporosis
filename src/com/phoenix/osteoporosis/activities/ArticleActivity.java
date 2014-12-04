@@ -13,7 +13,7 @@ import android.util.TypedValue;
 import android.view.Display;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.phoenix.osteoporosis.R;
@@ -55,11 +55,12 @@ public class ArticleActivity extends Activity {
         Typeface Face = Typeface.createFromAsset(getAssets(), "fonts/Yekan.ttf");
 
         final TextView Page_Title = (TextView) findViewById(R.id.tvCustomTitle);
-        Page_Title.setText(article.title);
+        Page_Title.setText(article.title.trim());
         Page_Title.setTypeface(Face);
-        Page_Title.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 18);
+
         //------------------------------------------------------
-        Html_Content = article.content;
+        Html_Content = article.content.replace("/>", "/><br/><br/>");
+        Html_Content = Html_Content.concat("<br/><br/><br/>");
         //----------------------------------------------------------
 
         Prepare_Article_Image_Urls(Html_Content);
@@ -71,11 +72,20 @@ public class ArticleActivity extends Activity {
         //----------------------------
 
         ImageView ivBackButton = (ImageView) findViewById(R.id.ivBackButton);
+        ivBackButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                onBackPressed();
+                overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
+                finish();
+            }
+        });
 
 
         //-----------------------------
 
-        Button btnSendArticle = (Button) findViewById(R.id.btnSendArticle);
+        ImageButton btnSendArticle = (ImageButton) findViewById(R.id.btnSendArticle);
 
         btnSendArticle.setOnClickListener(new OnClickListener() {
 
@@ -198,9 +208,8 @@ public class ArticleActivity extends Activity {
             Log.i("TAG", "Image_id: " + id);
             if (id > 0) {
                 drawable = getResources().getDrawable(id);
-            }
-            else{
-                drawable = getResources().getDrawable(R.drawable.image_not_found);
+            } else {
+                drawable = getResources().getDrawable(R.drawable.empty_image);
             }
             //------------------------------------------------------
             Display display = getWindowManager().getDefaultDisplay();

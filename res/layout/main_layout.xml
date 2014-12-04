@@ -43,7 +43,7 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="@color/tile_back2"
-                    android:layout_margin="@dimen/cell_margin"
+
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="5dp"
@@ -69,16 +69,27 @@
                         />
             </LinearLayout>
 
+            <Space
+                    android:layout_width="@dimen/cell_space"
+                    android:layout_height="fill_parent"
+                    />
+
+            <TextView
+                    android:layout_width="6dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/difer_tile_back"
+                    />
+
             <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="2"
                     android:background="@color/difer_tile_back"
-                    android:layout_margin="@dimen/cell_margin"
+
 
                     android:onClick="onClick"
                     android:orientation="horizontal"
-                    android:padding="10dp"
+                    android:padding="5dp"
 
                     android:id="@+id/main_moshavere"
                     >
@@ -105,12 +116,19 @@
             </LinearLayout>
         </LinearLayout>
 
+        <Space
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/cell_space"
+                />
+
         <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:orientation="horizontal"
                 android:weightSum="3"
                 android:layout_weight="2"
+                android:padding="0dp"
+                
                 >
 
             <LinearLayout
@@ -119,7 +137,7 @@
                     android:layout_weight="2"
                     android:orientation="vertical"
                     android:weightSum="2"
-                    android:layout_margin="@dimen/cell_margin"
+                    
                     >
 
                 <LinearLayout
@@ -128,6 +146,8 @@
                         android:layout_weight="1"
                         android:weightSum="2"
 
+                        android:padding="0dp"
+
                         >
 
                     <LinearLayout
@@ -135,7 +155,7 @@
                             android:layout_height="fill_parent"
                             android:layout_weight="1"
                             android:background="@color/tile_back"
-                            android:layout_margin="@dimen/cell_margin"
+
                             android:gravity="center"
                             android:orientation="vertical"
                             android:padding="10dp"
@@ -162,12 +182,17 @@
                                 />
                     </LinearLayout>
 
+                    <Space
+                            android:layout_width="@dimen/cell_space"
+                            android:layout_height="fill_parent"
+                            />
+
                     <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="fill_parent"
                             android:layout_weight="1"
                             android:background="@color/tile_back"
-                            android:layout_margin="@dimen/cell_margin"
+
                             android:gravity="center"
                             android:orientation="vertical"
                             android:padding="10dp"
@@ -196,6 +221,11 @@
 
                 </LinearLayout>
 
+                <Space
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/cell_space"
+                        />
+
                 <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
@@ -208,7 +238,7 @@
                             android:layout_height="fill_parent"
                             android:layout_weight="1"
                             android:background="@color/tile_back"
-                            android:layout_margin="@dimen/cell_margin"
+
                             android:gravity="center"
                             android:orientation="vertical"
                             android:padding="10dp"
@@ -234,12 +264,17 @@
                                 />
                     </LinearLayout>
 
+                    <Space
+                            android:layout_width="@dimen/cell_space"
+                            android:layout_height="fill_parent"
+                            />
+
                     <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="fill_parent"
                             android:layout_weight="1"
                             android:background="@color/tile_back"
-                            android:layout_margin="@dimen/cell_margin"
+
                             android:gravity="center"
                             android:padding="10dp"
                             android:orientation="vertical"
@@ -270,12 +305,16 @@
 
             </LinearLayout>
 
+            <Space
+                    android:layout_width="@dimen/cell_space"
+                    android:layout_height="fill_parent"
+                    />
+
             <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="@color/tile_back"
-                    android:layout_margin="@dimen/cell_margin"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="10dp"
@@ -304,6 +343,11 @@
 
         </LinearLayout>
 
+        <Space
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/cell_space"
+                />
+
         <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
@@ -316,7 +360,7 @@
                     android:layout_height="fill_parent"
                     android:layout_weight="2"
                     android:background="@color/difer_tile_back"
-                    android:layout_margin="@dimen/cell_margin"
+                    
                     android:gravity="center"
                     android:padding="10dp"
                     android:orientation="horizontal"
@@ -342,12 +386,17 @@
                         />
             </LinearLayout>
 
+            <Space
+                    android:layout_width="@dimen/cell_space"
+                    android:layout_height="fill_parent"
+                    />
+
             <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
                     android:background="@color/tile_back2"
-                    android:layout_margin="@dimen/cell_margin"
+                    
                     android:orientation="vertical"
                     android:padding="10dp"
                     android:onClick="onClick"

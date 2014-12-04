@@ -18,12 +18,8 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:shadowColor="#000000"
-                android:shadowDx="2"
-                android:shadowDy="2"
-                android:shadowRadius="2"
                 android:text="Title"
-                android:textColor="#f5f4aa" />
+                android:textColor="#aa383b21" />
     </LinearLayout>
 
     <LinearLayout
@@ -117,10 +113,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_button_style"
+                android:background="@drawable/bg_button_style"
                 android:gravity="center"
                 android:text="Cancel"
-                android:textColor="#f5f4aa" />
+                android:textColor="#aa383b21" />
 
         <Button
                 android:id="@+id/btnOk"
@@ -132,10 +128,10 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_button_style"
+                android:background="@drawable/bg_button_style"
                 android:gravity="center"
                 android:text="Ok"
-                android:textColor="#f5f4aa" />
+                android:textColor="#aa383b21" />
     </LinearLayout>
 
 </LinearLayout>

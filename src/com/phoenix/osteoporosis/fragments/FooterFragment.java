@@ -192,7 +192,7 @@ public class FooterFragment extends Fragment implements View.OnClickListener
             }
 
             File source = new File(s);
-            File destination = new File(Global.DIR_APP_TO_SEND + "/foot_problems.apk");
+            File destination = new File(Global.DIR_APP_TO_SEND + "/osteoporosis.apk");
 
             Log.i("TAG", "Source: " + source);
             Log.i("TAG", "Destination: " + destination);

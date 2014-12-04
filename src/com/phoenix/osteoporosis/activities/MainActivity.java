@@ -8,9 +8,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import com.phoenix.osteoporosis.R;
 
-/**
- * Created by phoenix on 18/11/2014.
- */
 public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -52,30 +49,38 @@ public class MainActivity extends Activity {
             case R.id.main_alaem:
                 intent = new Intent(view.getContext(), AlaemActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
                 break;
             case R.id.main_avarez:
-                intent = new Intent(view.getContext(), FakeActivity.class);
+                intent = new Intent(view.getContext(), ArticleActivity.class);
+                intent.putExtra("id", 9);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
                 break;
             case R.id.main_azmaiesh:
                 intent = new Intent(view.getContext(), FakeActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
                 break;
             case R.id.main_dalaiel:
                 intent = new Intent(view.getContext(), DalaielActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
                 break;
             case R.id.main_moshavere:
                 intent = new Intent(view.getContext(), ConsultationActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
                 break;
             case R.id.main_pishgiri:
                 intent = new Intent(view.getContext(), PishgiriActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
                 break;
             case R.id.main_ravesh_darman:
                 intent = new Intent(view.getContext(), DarmanActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
                 break;
         }
 

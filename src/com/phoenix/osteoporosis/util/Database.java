@@ -3,6 +3,8 @@ package com.phoenix.osteoporosis.util;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import java.util.ArrayList;
+
 /**
  * Created by phoenix on 29/11/2014.
  */
@@ -36,6 +38,26 @@ public class Database {
         read.close();
 
         return article;
+    }
+
+    public ArrayList<Article> search(String search_value) {
+
+        ArrayList<Integer> ids = new ArrayList<Integer>();
+        ArrayList<Article> articles = new ArrayList<Article>();
+
+
+        SQLiteDatabase read = read();
+        Cursor cursor = read.rawQuery("SELECT * FROM Articles WHERE Title LIKE '%" + search_value + "%' OR Articles.Content LIKE '%" + search_value + "%'", null);
+
+        while (cursor.moveToNext()) {
+            ids.add(cursor.getInt(cursor.getColumnIndex("ID")));
+        }
+
+        for (int i = 0; i < ids.size(); i++) {
+            articles.add(getArticle(ids.get(i)));
+        }
+
+        return articles;
     }
 
 
