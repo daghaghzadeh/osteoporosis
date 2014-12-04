@@ -56,13 +56,14 @@ public class FooterFragment extends Fragment implements View.OnClickListener
                 startActivity(intent);
                 break;
             case R.id.footer_site:
-                show_site();
+                intent = new Intent(view.getContext(), AboutActivity.class);
+                startActivity(intent);
                 break;
             case R.id.footer_send:
                 send_app();
                 break;
             case R.id.footer_developer:
-                intent = new Intent(view.getContext(), FakeActivity.class);
+                intent = new Intent(view.getContext(), DeveloperActivity.class);
                 startActivity(intent);
                 break;
         }

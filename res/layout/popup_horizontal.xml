@@ -34,13 +34,15 @@
                     android:id="@+id/tvFontSizeValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
                     android:text="Font Size" />
 
                 <TextView
                     android:id="@+id/tvFontSizeLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Label" />
+                    android:text="Label"
+                    android:textColor="#ffffff"/>
 
             </LinearLayout>
 

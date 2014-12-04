@@ -296,17 +296,17 @@ public class ArticleActivity extends Activity {
             }
         });
 
-//        ImageView ivFont = (ImageView) findViewById(R.id.ivFont);
-//        ivFont.setOnClickListener(new OnClickListener()
-//        {
-//
-//            @Override
-//            public void onClick(View v)
-//            {
-//                quickAction.show(v);
-//            }
-//
-//        });
+        ImageView ivFont = (ImageView) findViewById(R.id.iv);
+        ivFont.setOnClickListener(new OnClickListener()
+        {
+
+            @Override
+            public void onClick(View v)
+            {
+                quickAction.show(v);
+            }
+
+        });
 
     } // End Defien_Font_Change_Functionality()
 

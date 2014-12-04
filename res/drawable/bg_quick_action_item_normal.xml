@@ -2,10 +2,6 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"  android:shape="oval" >
     
     <solid
-        android:color="#67b801" />
-    
-    <stroke 
-        android:width="2dp"
-        android:color="#529202" />
-    
+        android:color="@color/difer_tile_back" />
+
 </shape>
