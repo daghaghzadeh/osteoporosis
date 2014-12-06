@@ -16,8 +16,8 @@
 
         <ImageView
                 android:id="@+id/ivBackButton"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:background="@drawable/background_back_button_style"
                 android:padding="5dp"
                 android:src="@drawable/arrow_left"
@@ -56,8 +56,8 @@
 
         <ImageView
                 android:id="@+id/iv"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/icon_font"
                 android:padding="5dp"
                 />

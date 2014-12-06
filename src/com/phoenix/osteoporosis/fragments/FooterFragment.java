@@ -17,7 +17,9 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import com.phoenix.osteoporosis.R;
-import com.phoenix.osteoporosis.activities.*;
+import com.phoenix.osteoporosis.activities.AboutActivity;
+import com.phoenix.osteoporosis.activities.DeveloperActivity;
+import com.phoenix.osteoporosis.activities.SearchActivity;
 import com.phoenix.osteoporosis.util.Global;
 
 import java.io.File;
@@ -25,20 +27,22 @@ import java.io.File;
 /**
  * Created by phoenix on 28/11/2014.
  */
-public class FooterFragment extends Fragment implements View.OnClickListener
-{
+public class FooterFragment extends Fragment implements View.OnClickListener {
     RadioButton rbSendViaBluetooth;
     RadioButton rbSendViaEmail;
+    View inflate;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View inflate = inflater.inflate(R.layout.footer_layout, null);
+        inflate = inflater.inflate(R.layout.footer_layout, null);
 
         inflate.findViewById(R.id.footer_developer).setOnClickListener(this);
         inflate.findViewById(R.id.footer_search).setOnClickListener(this);
         inflate.findViewById(R.id.footer_send).setOnClickListener(this);
         inflate.findViewById(R.id.footer_site).setOnClickListener(this);
+
+        set_fonts();
 
         return inflate;
     }
@@ -83,6 +87,7 @@ public class FooterFragment extends Fragment implements View.OnClickListener
         ad.show();
 
         ad.setContentView(R.layout.custom_alert_dialog);
+
 
         Typeface face = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Zar_Bd.ttf");
 
@@ -224,4 +229,16 @@ public class FooterFragment extends Fragment implements View.OnClickListener
         i.setData(Uri.parse(url));
         startActivity(i);
     }
+
+
+    public void set_fonts() {
+        Typeface face = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Yekan.ttf");
+
+        ((TextView) inflate.findViewById(R.id.footer_title1)).setTypeface(face);
+        ((TextView) inflate.findViewById(R.id.footer_title2)).setTypeface(face);
+        ((TextView) inflate.findViewById(R.id.footer_title3)).setTypeface(face);
+        ((TextView) inflate.findViewById(R.id.footer_title4)).setTypeface(face);
+
+    }
+
 }

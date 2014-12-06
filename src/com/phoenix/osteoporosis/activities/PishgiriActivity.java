@@ -2,8 +2,10 @@ package com.phoenix.osteoporosis.activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import com.phoenix.osteoporosis.R;
 
 /**
@@ -14,6 +16,7 @@ public class PishgiriActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pishgiri_layout);
+    set_fonts();
     }
 
 
@@ -45,5 +48,17 @@ public class PishgiriActivity extends Activity {
         }
 
         startActivity(intent);
+    }
+
+
+    public void set_fonts() {
+        Typeface face = Typeface.createFromAsset(getAssets(), "fonts/Yekan.ttf");
+
+        ((TextView) findViewById(R.id.main_title1)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title2)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title3)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title4)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title5)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title6)).setTypeface(face);
     }
 }

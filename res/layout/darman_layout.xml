@@ -36,7 +36,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@color/tile_back"
+                    android:background="@color/tile_back2"
                     android:layout_margin="@dimen/cell_margin"
                     android:onClick="onClick"
                     android:id="@+id/darman_darooie"
@@ -49,6 +49,7 @@
                         android:text="@string/darman_darooie"
                         android:textColor="@color/menu_text_color"
                         android:textSize="@dimen/menu_font_size"
+                        android:id="@+id/main_title1"
                         />
             </LinearLayout>
 
@@ -77,6 +78,7 @@
                             android:text="@string/jaigozin_hormoni"
                             android:textColor="@color/menu_text_color"
                             android:textSize="@dimen/menu_font_size"
+                            android:id="@+id/main_title3"
                             />
                 </LinearLayout>
 
@@ -98,6 +100,7 @@
                             android:text="@string/hormoni"
                             android:textColor="@color/menu_text_color"
                             android:textSize="@dimen/menu_font_size"
+                            android:id="@+id/main_title4"
                             />
                 </LinearLayout>
 
@@ -107,20 +110,21 @@
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@color/tile_back"
+                    android:background="@color/tile_back2"
                     android:layout_margin="@dimen/cell_margin"
                     android:padding="5dp"
                     android:onClick="onClick"
-                    android:id="@+id/darman_tosie"
+                    android:id="@+id/darman_mokamel"
                     >
 
                 <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:gravity="center"
-                        android:text="@string/tosie_vizhe"
+                        android:text="@string/mokamelha"
                         android:textColor="@color/menu_text_color"
                         android:textSize="@dimen/menu_font_size"
+                        android:id="@+id/main_title5"
                         />
             </LinearLayout>
         </LinearLayout>
@@ -150,6 +154,7 @@
                         android:text="@string/varzesh"
                         android:textColor="@color/menu_text_color2"
                         android:textSize="@dimen/menu_font_size"
+                        android:id="@+id/main_title2"
                         />
             </LinearLayout>
 
@@ -157,20 +162,22 @@
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@color/tile_back"
+                    android:background="@color/difer_tile_back"
                     android:layout_margin="@dimen/cell_margin"
                     android:padding="5dp"
                     android:onClick="onClick"
-                    android:id="@+id/darman_mokamel"
+                    android:id="@+id/darman_tosie"
+
                     >
 
                 <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:gravity="center"
-                        android:text="@string/mokamelha"
-                        android:textColor="@color/menu_text_color"
+                        android:text="@string/tosie_vizhe"
+                        android:textColor="@color/menu_text_color2"
                         android:textSize="@dimen/menu_font_size"
+                        android:id="@+id/main_title6"
                         />
             </LinearLayout>
         </LinearLayout>

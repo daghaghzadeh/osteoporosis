@@ -52,6 +52,7 @@
                         android:textColor="@color/menu_text_color"
                         android:text="@string/esteopeni"
                         android:gravity="center"
+                        android:id="@+id/main_title1"
 
                         />
 
@@ -119,6 +120,7 @@
                             android:textColor="@color/menu_text_color2"
                             android:text="@string/dard"
                             android:gravity="center"
+                            android:id="@+id/main_title2"
                             />
                 </LinearLayout>
 
@@ -144,6 +146,7 @@
                             android:textColor="@color/menu_text_color2"
                             android:text="@string/shekastegi"
                             android:gravity="center"
+                            android:id="@+id/main_title3"
                             />
                 </LinearLayout>
 
@@ -180,6 +183,7 @@
                         android:textColor="@color/menu_text_color"
                         android:text="@string/poosidegi_dandan"
                         android:gravity="center"
+                        android:id="@+id/main_title4"
                         />
             </LinearLayout>
 
@@ -205,6 +209,7 @@
                         android:textColor="@color/menu_text_color"
                         android:text="@string/kahesh_ghad"
                         android:gravity="center"
+                        android:id="@+id/main_title5"
                         />
             </LinearLayout>
 
@@ -230,6 +235,7 @@
                         android:textColor="@color/menu_text_color"
                         android:text="@string/khamidegi"
                         android:gravity="center"
+                        android:id="@+id/main_title6"
                         />
             </LinearLayout>
         </LinearLayout>

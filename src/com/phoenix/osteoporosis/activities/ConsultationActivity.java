@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.*;
 import android.widget.AdapterView.OnItemSelectedListener;
-
 import com.phoenix.osteoporosis.R;
 import com.phoenix.osteoporosis.util.DbHelper;
 
@@ -35,6 +34,11 @@ public class ConsultationActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.consultation_layout);
+
+        //-----------------------------------------
+        findViewById(R.id.btnSendArticle).setVisibility(View.GONE);
+        findViewById(R.id.iv).setVisibility(View.GONE);
+
         //-----------------------------------------
         db = new DbHelper(this);
         //-----------------------------------------

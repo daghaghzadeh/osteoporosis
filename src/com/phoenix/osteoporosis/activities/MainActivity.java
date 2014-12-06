@@ -2,10 +2,12 @@ package com.phoenix.osteoporosis.activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 import com.phoenix.osteoporosis.R;
 
 public class MainActivity extends Activity {
@@ -14,6 +16,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
         Animation fade_in = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
+
+        set_fonts();
 
         fade_in.setDuration(3000);
 
@@ -85,6 +89,21 @@ public class MainActivity extends Activity {
         }
 
 
+    }
+
+
+    public void set_fonts() {
+        Typeface face = Typeface.createFromAsset(getAssets(), "fonts/Yekan.ttf");
+
+        ((TextView) findViewById(R.id.main_title1)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title2)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title3)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title4)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title5)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title6)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title7)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title8)).setTypeface(face);
+        ((TextView) findViewById(R.id.main_title9)).setTypeface(face);
     }
 
 }

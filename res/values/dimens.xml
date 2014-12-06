@@ -6,6 +6,7 @@
     <dimen name="cell_margin">2dp</dimen>
     <dimen name="inner_cell_margin">0dp</dimen>
     <dimen name="cell_space">4dp</dimen>
+    <dimen name="menu_icon_margin">4dp</dimen>
 
 
 </resources>

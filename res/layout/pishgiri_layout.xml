@@ -59,6 +59,7 @@
                             android:text="@string/control_vazn"
                             android:textColor="@color/menu_text_color"
                             android:textSize="@dimen/menu_font_size"
+                            android:id="@+id/main_title1"
                             />
                 </LinearLayout>
 
@@ -80,6 +81,7 @@
                             android:text="@string/rezhim"
                             android:textColor="@color/menu_text_color"
                             android:textSize="@dimen/menu_font_size"
+                            android:id="@+id/main_title3"
                             />
                 </LinearLayout>
             </LinearLayout>
@@ -102,6 +104,7 @@
                         android:text="@string/varzesh"
                         android:textColor="@color/menu_text_color2"
                         android:textSize="@dimen/menu_font_size"
+                        android:id="@+id/main_title2"
                         />
             </LinearLayout>
         </LinearLayout>
@@ -131,6 +134,7 @@
                         android:text="@string/tark_adat"
                         android:textColor="@color/menu_text_color2"
                         android:textSize="@dimen/menu_font_size"
+                        android:id="@+id/main_title4"
                         />
             </LinearLayout>
 
@@ -159,6 +163,7 @@
                             android:text="@string/masraf_daro"
                             android:textColor="@color/menu_text_color"
                             android:textSize="@dimen/menu_font_size"
+                            android:id="@+id/main_title5"
                             />
                 </LinearLayout>
 
@@ -180,6 +185,7 @@
                             android:text="@string/bardari"
                             android:textColor="@color/menu_text_color"
                             android:textSize="@dimen/menu_font_size"
+                            android:id="@+id/main_title6"
                             />
                 </LinearLayout>
             </LinearLayout>

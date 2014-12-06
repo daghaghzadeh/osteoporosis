@@ -2,18 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#BD3D3D"
+    android:background="@color/background"
     android:orientation="vertical"
     android:paddingTop="4px" >
 
 	<include android:id="@+id/search_field" layout="@layout/search_field" />
+
 
 	<ListView
 	    android:id="@+id/search_list"
 	    android:layout_width="fill_parent"
 	    android:layout_height="fill_parent"
 	    android:layout_below="@id/search_field"
-	    android:background="#BD3D3D"
+		android:background="@color/background"
 	    android:drawSelectorOnTop="false" />
 
 </RelativeLayout>
