@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        >
+
+    <include
+            layout="@layout/diag_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/Diagnosis.Title"
+            android:id="@+id/diag_information_title"
+            />
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/Diagnosis.Content"
+            android:id="@+id/diag_information_content"
+            />
+
+</LinearLayout>

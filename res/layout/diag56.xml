@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              style="@style/Diagnosis"
+
+        >
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ابزارهای کنترل نشانه ها و خطر شکستگی"
+            style="@style/Diagnosis.Title"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diag_l1"
+            style="@style/Diagnosis.Button"
+            android:text="شاخص همایندی مرضی کارلسون"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diag_l2"
+            style="@style/Diagnosis.Button"
+            android:text="شاخص بارتل"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diag_l3"
+            style="@style/Diagnosis.Button"
+            android:text="FRAX"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diag_l4"
+            style="@style/Diagnosis.Button"
+            android:text="شاخص تحرک پارکر"
+            />
+
+</LinearLayout>

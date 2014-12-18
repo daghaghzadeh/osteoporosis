@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Diagnosis"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:text="شاخص بارتل"
+                android:id="@+id/diag62_title"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Content"
+                android:text="ADLs چیزی است که «ما بطور معمول در فعالیت های روزمره خود انجام می دهیم که شامل همه فعالیت های روزمره انجام شده برای خود مراقبتی است.»"
+                android:id="@+id/diag62_content"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_title1"
+                android:text="شکم و روده:"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag62_score1"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag62_score1_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: بدون پرهیز (یا نیازمند تنقیه)"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score1_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="5: تصادف گاه و بی گاه (کمتر از 1 بار در هفته)"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score1_3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="10: پرهیز"
+                    />
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_title2"
+                android:text="حمام کردن:"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag62_score2"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag62_score2_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: وابسته"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score2_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="5: مستقل"
+                    />
+
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Content"
+                android:text="حمام: باید به صورت نظارت نشده گرفته شود، خود فرد خودش را بشوید؛ دوش به صورت نظارت نشده گرفته شود/ بدون کمک"
+                android:id="@+id/diag62_content2"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_title3"
+                android:text="مراقبت کردن:"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag62_score3"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag62_score3_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: نیاز به کمک با مراقبت شخصی وجود دارد"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score3_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="5: مستقل: مراقبت های لازم می تواند با کمک یک فرد دیگر انجام شود"
+                    />
+
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_title4"
+                android:text="لباس پوشیدن:"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag62_score4"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag62_score4_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: وابسته"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score4_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="5: نیاز به کمک دارد اما می تواند نصف فعالیت را خود انجام دهد"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score4_3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="10: مستقل شامل بستن دکمه ها، زیپ، بند کفش و موارد مانند آن"
+                    />
+
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_title5"
+                android:text="غذا خوردن:"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag62_score5"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag62_score5_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: ناتوان"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score5_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="5: نیاز به کمک برای تکه کردن غذا، پهن کردن کره روی نان و موارد مانند آن دارد ولی خودش می تواند غذا بخورد."
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score5_3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="10: مستقل"
+                    />
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_title6"
+                android:text="تحرک در داخل خانه"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag62_score6"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag62_score6_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: بدون تحرک"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score6_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="5: مستقل از طریق استفاده از ویلچر"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score6_3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="10: نیاز به کمک یک فرد آموزش ندیده همراه با نظارت کافی"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score6_4"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="15: مستقل (ممکن است نیاز به کمک وجود داشته باشد)"
+                    />
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_title7"
+                android:text="جابجایی"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag62_score7"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag62_score7_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: ناتوان، عدم قابلیت نوشتن متوازن. نیاز به دو نفر برای بلند کردن وجود دارد"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score7_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="5: نیاز زیاد به کمک فیزیکی، یک فرد قوی و با تجربه یا 2 فرد عادی"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score7_3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="10: نیاز به حداقل کمک"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score7_4"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="15: مستقل"
+                    />
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_title8"
+                android:text="بالا و پایین رفتن از پله ها"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag62_score8"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag62_score8_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: ناتوان"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score8_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="5: نیاز به کمک دیگران"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score8_3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="10: مستقل در بالا و پایین رفتن، با استفاده از ابزارهای کمکی"
+                    />
+
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_title9"
+                android:text="توالت رفتن"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag62_score9"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag62_score9_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: وابسته"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score9_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="5: نیاز به کمک دارد اما برخی کارها را می تواند خود انجام دهد (همچون شستشوی خود)"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score9_3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="10: مستقل؛ می تواند به دستشویی برود، لباس خود را در بیاورد، خود را تمیز کند، و در نهایت دستشویی را ترک کند"
+                    />
+
+        </RadioGroup>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_title10"
+                android:text="ادرار کردن"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag62_score10"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag62_score10_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: فاقد توان کنترل ادرار یا نیازمند سوند زدن"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score10_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="5: رویدادهای اتفاقی
+(حداکثر یک بار در 24 ساعت)
+"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag62_score10_3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="10: دارای توان کنترل ادرار برای بیش از 7 روز"
+                    />
+
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_sum"
+                android:text="شکم و روده:"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag62_result"
+                android:text="شکم و روده:"
+                />
+
+    </LinearLayout>
+</ScrollView>

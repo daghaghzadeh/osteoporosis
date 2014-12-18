@@ -2,10 +2,9 @@ package com.phoenix.osteoporosis.activities;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.util.Log;
 import com.phoenix.osteoporosis.R;
+import com.phoenix.osteoporosis.activities.diagnosisActivities.Diag57;
 
 /**
  * Created by phoenix on 18/11/2014.
@@ -32,12 +31,9 @@ public class SplashActivity extends Activity {
     }
 
     public void test() {
-        try {
-            String sourceDir = getPackageManager().getPackageInfo(getPackageName(), 0).applicationInfo.sourceDir;
-            Log.d("SplashActivity", sourceDir);
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        }
+
+        Intent intent = new Intent(this, Diag57.class);
+        startActivity(intent);
 
     }
 

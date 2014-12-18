@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Diagnosis"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/Diagnosis"
+            >
+
+        <include
+                layout="@layout/diag_header"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                />
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/diag_title"
+                    android:text="بیسفسفنات وریدی"
+                    style="@style/Diagnosis.Title"
+                    />
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                <Button
+                        android:text="i"
+                        style="@style/Diagnosis.CircleButton"
+                        android:id="@+id/diag_i1"
+                        />
+
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/diag_content"
+                        android:text="بیسفسفنات وریدی، زمان بندی پس از شکستگی بیش از 2 هفته"
+                        style="@style/Diagnosis.Content"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag_l1"
+                android:text="اطلاعات مربوط به داروهای پوکی استخوان"
+                style="@style/Diagnosis.Yes"
+                />
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/diag_title2"
+                    android:text="یا"
+                    style="@style/Diagnosis.Title"
+                    />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                <Button
+                        android:text="i"
+                        style="@style/Diagnosis.CircleButton"
+                        android:id="@+id/diag_i2"
+                        />
+
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/diag_content2"
+                        android:text="آلندرونات 70 میلی گرم یک بار در هفته که بلافاصله پس از آنکه بیمار قادر به بلند شدن از جای خود شد باید مصرف شود."
+                        style="@style/Diagnosis.Content"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag_l2"
+                android:text="اطلاعات مربوط به داروهای پوکی استخوان"
+                style="@style/Diagnosis.No"
+                />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2622876010">
+  <component name="DataSourceManagerImpl" format="xml" hash="2145539444">
     <data-source source="LOCAL" name="osteo - articles" uuid="a9c9e4a4-0579-43e3-a50e-ec69675cdf9b">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$USER_HOME$/Desktop/daghaghzadeh/osteoporosis.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/assets/osteoporosis.db</jdbc-url>
       <libraries />
     </data-source>
   </component>

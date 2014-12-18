@@ -41,23 +41,31 @@ public class Database {
     }
 
     public ArrayList<Article> search(String search_value) {
-
         ArrayList<Integer> ids = new ArrayList<Integer>();
         ArrayList<Article> articles = new ArrayList<Article>();
-
-
         SQLiteDatabase read = read();
         Cursor cursor = read.rawQuery("SELECT * FROM Articles WHERE Title LIKE '%" + search_value + "%' OR Articles.Content LIKE '%" + search_value + "%'", null);
-
         while (cursor.moveToNext()) {
             ids.add(cursor.getInt(cursor.getColumnIndex("ID")));
         }
-
         for (int i = 0; i < ids.size(); i++) {
             articles.add(getArticle(ids.get(i)));
         }
-
         return articles;
+    }
+
+    public DiagPage getDiagPage(int id) {
+
+        SQLiteDatabase read = read();
+        Cursor cursor = read.rawQuery("SELECT * FROM Diagnosis WHERE id = " + id, null);
+        DiagPage page = null;
+
+        if (cursor.moveToNext()) {
+            page = new DiagPage();
+            page.getFromCursor(cursor);
+        }
+        return page;
+
     }
 
 

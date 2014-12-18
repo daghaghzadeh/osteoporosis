@@ -9,6 +9,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import com.phoenix.osteoporosis.R;
+import com.phoenix.osteoporosis.activities.diagnosisActivities.Diag1;
 
 public class MainActivity extends Activity {
     @Override
@@ -83,6 +84,11 @@ public class MainActivity extends Activity {
                 break;
             case R.id.main_ravesh_darman:
                 intent = new Intent(view.getContext(), DarmanActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
+                break;
+            case R.id.main_test:
+                intent = new Intent(view.getContext(), Diag1.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
                 break;

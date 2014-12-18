@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Diagnosis"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:text="شاخص تحرک پارکر"
+                android:id="@+id/diag70_title"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Content"
+                android:text="ارزیابی تحرک قبل از ایجاد شکستگی. این شاخص بین 0 تا 9 تعریف می شود.
+تحرک
+"
+                android:id="@+id/diag70_content"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag70_title1"
+                android:text="توانایی حرکت در محیط خانه"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag70_score1"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag70_score1_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="3: بدون مشکل"
+                    android:checked="true"
+
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag70_score1_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="2: با یک کمک"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag70_score1_3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="1: با کمک یک فرد دیگر"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag70_score1_4"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: عدم وجود قابلیت حرکت بطور کامل"
+                    />
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag70_title2"
+                android:text="توانایی خارج شدن از خانه"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag70_score2"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag70_score2_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="3: بدون مشکل"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag70_score2_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="2: با یک کمک"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag70_score2_3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="1: با کمک یک فرد دیگر"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag70_score2_4"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: عدم امکان خارج شدن از خانه بطور کامل"
+                    />
+
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag70_title3"
+                android:text="توانایی خرید کردن"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag70_score3"
+                >
+
+            <RadioButton
+                    android:id="@+id/diag70_score3_1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="3: بدون مشکل"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag70_score3_2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="2: با یک کمک"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag70_score3_3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="1: با کمک یک فرد دیگر"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag70_score3_4"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="0: عدم امکان خرید کردن بطور کامل"
+                    />
+
+        </RadioGroup>
+
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag70_sum"
+                android:text="جمع: 3 امتیاز"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:id="@+id/diag70_result"
+                android:text="یک جمع امتیاز 3 یا کمتر نشان دهنده پیش بینی نسبت تحرک سالانه 50% برای یک سال است."
+                />
+
+    </LinearLayout>
+</ScrollView>

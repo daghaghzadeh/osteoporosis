@@ -13,6 +13,7 @@ import java.io.File;
 public class Global extends Application {
     public static ResourceHandler resourceHandler = new ResourceHandler();
     public static Database database = new Database();
+    public static DiagContentSolver diagContentSolver = new DiagContentSolver();
 
     public static final String DIR_SDCARD = Environment.getExternalStorageDirectory().getAbsolutePath();
     public static final String DIR_APP = DIR_SDCARD + "/BiP";
@@ -21,7 +22,7 @@ public class Global extends Application {
     public static final String DIR_DB = DIR_APP + "/db";
     public static final String DIR_APP_TO_SEND = DIR_APP + "/app";
     public static final String DB_NAME = "osteoporosis.sqlite";
-    public static  LayoutInflater INFLATER ;
+    public static LayoutInflater INFLATER;
 
     public static Context context;
 
@@ -33,7 +34,7 @@ public class Global extends Application {
         new File(DIR_APP_TO_SEND).mkdirs();
         new File(DIR_DB).mkdirs();
 
-        if(!new File(DIR_DB,DB_NAME).exists()){
+        if (!new File(DIR_DB, DB_NAME).exists()) {
             resourceHandler.copyDB();
         }
         INFLATER = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);

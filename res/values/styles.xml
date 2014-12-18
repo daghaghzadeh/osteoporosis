@@ -10,11 +10,11 @@
         <item name="android:button">@drawable/radio</item>
     </style>
 
-    <style name="Animations" />
+    <style name="Animations"/>
 
 
     <!-- PopDownMenu -->
-    <style name="Animations.PopDownMenu" />
+    <style name="Animations.PopDownMenu"/>
 
     <style name="Animations.PopDownMenu.Center">
         <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
@@ -37,7 +37,7 @@
     </style>
 
     <!-- PopUpMenu -->
-    <style name="Animations.PopUpMenu" />
+    <style name="Animations.PopUpMenu"/>
 
     <style name="Animations.PopUpMenu.Center">
         <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
@@ -59,6 +59,90 @@
         <item name="@android:windowExitAnimation">@anim/disappear</item>
     </style>
 
+    <style name="Diagnosis">
+        <item name="android:background">@color/background</item>
+    </style>
+
+
+    <style name="Diagnosis.Title">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/menu_text_color</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="Diagnosis.Content">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/menu_text_color2</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="Diagnosis.Yes" parent="Diagnosis.Button"></style>
+
+    <style name="Diagnosis.No" parent="Diagnosis.Button"></style>
+
+    <style name="Diagnosis.Button">
+        <item name="android:background">@color/tile_back2</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+    <style name="Diagnosis.SwitchingButton" parent="Diagnosis.Button">
+
+        <item name="android:layout_marginBottom">1dp</item>
+
+    </style>
+
+    <style name="Diagnosis.CircleButton">
+        <item name="android:background">@drawable/checked</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Diagnosis.Information">
+        <item name="android:background">@color/tile_back</item>
+    </style>
+
+    <style name="Diagnosis.RadioGroup"></style>
+
+    <style name="Diagnosis.AgeRadioGroup"></style>
+
+    <style name="Diagnosis.ScoreRadioGroup"></style>
+
+    <style name="Diagnosis.ScoreRadioGroup.RadioButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+
+        <item name="android:buttonStyle">@style/radioButtonStyle</item>
+    </style>
+    <style name="radioButtonStyle">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="Diagnosis.AgeRadioGroup.RadioButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="Diagnosis.RadioGroup.Text" parent="Diagnosis.Title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Diagnosis.RadioGroup.RadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:button">@drawable/empty</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+
+    </style>
 
 
 </resources>

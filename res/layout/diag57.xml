@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Diagnosis"
+        >
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="شاخص همایندی مرضی کارلسون"
+                style="@style/Diagnosis.Title"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                android:id="@+id/diag57_first_group_1"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_1_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_1_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="شیوع بیماری(1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_1_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                android:id="@+id/diag57_first_group_2"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_2_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_2_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="سکته قلبی (1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_2_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                android:id="@+id/diag57_first_group_3"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_3_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_3_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="نارسایی قلبی (1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_3_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                android:id="@+id/diag57_first_group_4"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_4_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_4_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="بیماری شریانی محیطی یا اندامی (PAVD) (1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_4_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                android:id="@+id/diag57_first_group_5"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_5_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_5_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="جنون (1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_5_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_6_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_6_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="بیماری عروق مغزی (1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_6_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_7_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_7_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="بیماری مزمن ریه (1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_7_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_8_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_8_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="روماتیسم (1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_8_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_9_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_9_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="زخم معده (1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_9_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_10_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_10_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="بیماری کبد خوش خیم (1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_10_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_11_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_11_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="دیابت (بدون عوارض) (1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_11_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_12_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_12_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="دیابت (همراه با عوارض) (2)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_12_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_13_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_13_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="فلج ناقص (2)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_13_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_14_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_14_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="نارسایی کلیه خوش خیم یا جدی (2)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_14_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_15_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_15_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="سرطان (2)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_15_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_16_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_16_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="سرطان خون (2)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_16_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_17"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_17_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_17_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="تومور مغز استخوان، غدد لنفاوی (2)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_17_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_18_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_18_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="بیماری کبد خوش خیم یا جدی (3)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_18_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:id="@+id/diag57_first_group_19"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_19_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_19_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="متاستاز (6)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_19_y"
+                    />
+        </RadioGroup>
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                style="@style/Diagnosis.RadioGroup"
+                android:id="@+id/diag57_first_group_20"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="خیر"
+                    android:id="@+id/diag57_20_n"
+                    />
+
+            <TextView
+                    android:id="@+id/diag57_20_t"
+                    style="@style/Diagnosis.RadioGroup.Text"
+                    android:text="ایدز (6)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.RadioGroup.RadioButton"
+                    android:text="بله"
+                    android:id="@+id/diag57_20_y"
+                    />
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:text="سن+"
+                />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/diag57_second_group"
+                android:gravity="right"
+                >
+
+            <RadioButton
+                    style="@style/Diagnosis.AgeRadioGroup.RadioButton"
+                    android:id="@+id/diag57_second_1"
+                    android:text="50 تا 59 سال (1)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.AgeRadioGroup.RadioButton"
+                    android:id="@+id/diag57_second_2"
+                    android:text="60 تا 69 سال (2)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.AgeRadioGroup.RadioButton"
+                    android:id="@+id/diag57_second_3"
+                    android:text="70 تا 79 سال (3)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.AgeRadioGroup.RadioButton"
+                    android:id="@+id/diag57_second_4"
+                    android:text="80 تا 89 سال (4)"
+                    />
+
+            <RadioButton
+                    style="@style/Diagnosis.AgeRadioGroup.RadioButton"
+                    android:id="@+id/diag57_second_5"
+                    android:text="90 سال و بیشتر (5)"
+                    />
+
+        </RadioGroup>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/diag57_score"
+                    style="@style/Diagnosis.Title"
+                    android:text="شاخص = 0
+احتمال مرگ و میر در سال بعدی
+"
+                    />
+
+            <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    >
+            <RadioButton
+                    android:id="@+id/diag57_score1"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                     android:text="شاخص = 0 (بدون همایندی مرضی): 12% مرگ و میر"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag57_score2"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="شاخص = 1-2 (همایندی مرضی حداقل یا متوسط): 26% مرگ و میر"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag57_score3"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="شاخص = 3-4 (همایندی مرضی متوسط یا جدی): 52% مرگ و میر"
+                    />
+
+            <RadioButton
+                    android:id="@+id/diag57_score4"
+                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                    android:text="شاخص = ≤ 5 (همایندی مرضی جدی): 85% مرگ و میر"
+
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

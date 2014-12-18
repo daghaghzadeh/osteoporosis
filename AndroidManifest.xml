@@ -31,5 +31,33 @@
         <activity android:name=".activities.ArticleActivity"/>
         <activity android:name=".activities.AboutActivity"/>
         <activity android:name=".activities.DeveloperActivity"/>
+        <activity android:name=".activities.DiagTestActivity"/>
+        <activity android:name=".activities.diagnosisActivities.DiagInformation"/>
+        <activity android:name=".activities.diagnosisActivities.Diag1"/>
+        <activity android:name=".activities.diagnosisActivities.Diag3"/>
+        <activity android:name=".activities.diagnosisActivities.Diag5"/>
+        <activity android:name=".activities.diagnosisActivities.Diag6"/>
+        <activity android:name=".activities.diagnosisActivities.Diag8"/>
+        <activity android:name=".activities.diagnosisActivities.Diag11"/>
+        <activity android:name=".activities.diagnosisActivities.Diag13"/>
+        <activity android:name=".activities.diagnosisActivities.Diag14"/>
+        <activity android:name=".activities.diagnosisActivities.Diag16"/>
+        <activity android:name=".activities.diagnosisActivities.Diag17"/>
+        <activity android:name=".activities.diagnosisActivities.Diag19"/>
+        <activity android:name=".activities.diagnosisActivities.Diag31"/>
+        <activity android:name=".activities.diagnosisActivities.Diag45"/>
+        <activity android:name=".activities.diagnosisActivities.Diag21"/>
+        <activity android:name=".activities.diagnosisActivities.Diag56"/>
+        <activity android:name=".activities.diagnosisActivities.Diag57"/>
+        <activity android:name=".activities.diagnosisActivities.Diag62"/>
+        <activity android:name=".activities.diagnosisActivities.Diag69"/>
+        <activity android:name=".activities.diagnosisActivities.Diag70"/>
+        <activity android:name=".activities.diagnosisActivities.Diag24"/>
+        <activity android:name=".activities.diagnosisActivities.Diag26"/>
+        <activity android:name=".activities.diagnosisActivities.Diag22"/>
+        <activity
+                android:name=".activities.diagnosisActivities.DiagA"
+                android:label="diaga"
+                />
     </application>
 </manifest>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Diagnosis"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/Diagnosis"
+            >
+
+        <include
+                layout="@layout/diag_header"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag_title"
+                android:text="داروهای پوکی استخوان مورد استفاده در حال حاضر"
+                style="@style/Diagnosis.Title"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag_content"
+                android:text="آیا بیمار هم اکنون از درمان های خاص پوکی استخوان و داروهای مربوط به آن استفاده می کند؟"
+                style="@style/Diagnosis.Content"
+                />
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag_yes"
+                android:text="بله"
+                style="@style/Diagnosis.Yes"
+                />
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag_no"
+                android:text="خیر"
+                style="@style/Diagnosis.No"
+                />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
