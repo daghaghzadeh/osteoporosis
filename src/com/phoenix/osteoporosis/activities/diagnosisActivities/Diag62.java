@@ -27,6 +27,8 @@ public class Diag62 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diag62);
 
+        update_scoreBoard();
+
         RadioGroup score1_group = (RadioGroup) findViewById(R.id.diag62_score1);
         RadioGroup score2_group = (RadioGroup) findViewById(R.id.diag62_score2);
         RadioGroup score3_group = (RadioGroup) findViewById(R.id.diag62_score3);
@@ -82,13 +84,13 @@ public class Diag62 extends Activity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.diag62_score4_1) {
-                    score3 = 0;
+                    score4 = 0;
                 }
                 if (i == R.id.diag62_score4_2) {
-                    score3 = 5;
+                    score4 = 5;
                 }
                 if (i == R.id.diag62_score4_3) {
-                    score3 = 10;
+                    score4 = 10;
                 }
                 update_scoreBoard();
             }
@@ -98,13 +100,13 @@ public class Diag62 extends Activity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.diag62_score5_1) {
-                    score3 = 0;
+                    score5 = 0;
                 }
                 if (i == R.id.diag62_score5_2) {
-                    score3 = 5;
+                    score5 = 5;
                 }
                 if (i == R.id.diag62_score5_3) {
-                    score3 = 10;
+                    score5 = 10;
                 }
                 update_scoreBoard();
             }
@@ -114,16 +116,16 @@ public class Diag62 extends Activity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.diag62_score6_1) {
-                    score3 = 0;
+                    score6 = 0;
                 }
                 if (i == R.id.diag62_score6_2) {
-                    score3 = 5;
+                    score6 = 5;
                 }
                 if (i == R.id.diag62_score6_3) {
-                    score3 = 10;
+                    score6 = 10;
                 }
                 if (i == R.id.diag62_score6_4) {
-                    score3 = 15;
+                    score6 = 15;
                 }
                 update_scoreBoard();
             }
@@ -133,16 +135,16 @@ public class Diag62 extends Activity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.diag62_score7_1) {
-                    score3 = 0;
+                    score7 = 0;
                 }
                 if (i == R.id.diag62_score7_2) {
-                    score3 = 5;
+                    score7 = 5;
                 }
                 if (i == R.id.diag62_score7_3) {
-                    score3 = 10;
+                    score7 = 10;
                 }
                 if (i == R.id.diag62_score7_4) {
-                    score3 = 15;
+                    score7 = 15;
                 }
                 update_scoreBoard();
             }
@@ -152,13 +154,13 @@ public class Diag62 extends Activity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.diag62_score8_1) {
-                    score3 = 0;
+                    score8 = 0;
                 }
                 if (i == R.id.diag62_score8_2) {
-                    score3 = 5;
+                    score8 = 5;
                 }
                 if (i == R.id.diag62_score8_3) {
-                    score3 = 10;
+                    score8 = 10;
                 }
                 update_scoreBoard();
             }
@@ -168,13 +170,13 @@ public class Diag62 extends Activity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.diag62_score9_1) {
-                    score3 = 0;
+                    score9 = 0;
                 }
                 if (i == R.id.diag62_score9_2) {
-                    score3 = 5;
+                    score9 = 5;
                 }
                 if (i == R.id.diag62_score9_3) {
-                    score3 = 10;
+                    score9 = 10;
                 }
                 update_scoreBoard();
             }
@@ -184,13 +186,13 @@ public class Diag62 extends Activity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.diag62_score10_1) {
-                    score3 = 0;
+                    score10 = 0;
                 }
                 if (i == R.id.diag62_score10_2) {
-                    score3 = 5;
+                    score10 = 5;
                 }
                 if (i == R.id.diag62_score10_3) {
-                    score3 = 10;
+                    score10 = 10;
                 }
                 update_scoreBoard();
             }
@@ -203,8 +205,8 @@ public class Diag62 extends Activity {
 
 
 
-        TextView sum_tv = (TextView) findViewById(R.id.diag62_sum);
         TextView res_tv = (TextView) findViewById(R.id.diag62_result);
+        TextView sum_tv = (TextView) findViewById(R.id.diag62_sum);
         sum_tv.setText("جمع: " + score + "امتیاز");
 
         if (score < 41) {

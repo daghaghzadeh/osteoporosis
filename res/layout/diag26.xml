@@ -45,6 +45,7 @@
                         android:text="i"
                         style="@style/Diagnosis.CircleButton"
                         android:id="@+id/diag_i1"
+                        android:onClick="onClick"
                         />
 
                 <TextView

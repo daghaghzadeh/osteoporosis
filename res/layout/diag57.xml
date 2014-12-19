@@ -646,31 +646,40 @@
             <RadioGroup
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/diag57_result"
                     >
-            <RadioButton
-                    android:id="@+id/diag57_score1"
-                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
-                     android:text="شاخص = 0 (بدون همایندی مرضی): 12% مرگ و میر"
-                    />
 
-            <RadioButton
-                    android:id="@+id/diag57_score2"
-                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
-                    android:text="شاخص = 1-2 (همایندی مرضی حداقل یا متوسط): 26% مرگ و میر"
-                    />
+                <RadioButton
+                        android:id="@+id/diag57_score1"
+                        style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                        android:text="شاخص = 0 (بدون همایندی مرضی): 12% مرگ و میر"
+                        android:button="@drawable/empty"
+                        android:background="@drawable/radio_flat"
+                        />
 
-            <RadioButton
-                    android:id="@+id/diag57_score3"
-                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
-                    android:text="شاخص = 3-4 (همایندی مرضی متوسط یا جدی): 52% مرگ و میر"
-                    />
+                <RadioButton
+                        android:id="@+id/diag57_score2"
+                        style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                        android:text="شاخص = 1-2 (همایندی مرضی حداقل یا متوسط): 26% مرگ و میر"
+                        android:button="@drawable/empty"
+                        android:background="@drawable/radio_flat"
+                        />
 
-            <RadioButton
-                    android:id="@+id/diag57_score4"
-                    style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
-                    android:text="شاخص = ≤ 5 (همایندی مرضی جدی): 85% مرگ و میر"
+                <RadioButton
+                        android:id="@+id/diag57_score3"
+                        style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                        android:text="شاخص = 3-4 (همایندی مرضی متوسط یا جدی): 52% مرگ و میر"
+                        android:button="@drawable/empty"
+                        android:background="@drawable/radio_flat"
+                        />
 
-                    />
+                <RadioButton
+                        android:id="@+id/diag57_score4"
+                        style="@style/Diagnosis.ScoreRadioGroup.RadioButton"
+                        android:text="شاخص = ≤ 5 (همایندی مرضی جدی): 85% مرگ و میر"
+                        android:button="@drawable/empty"
+                        android:background="@drawable/radio_flat"
+                        />
             </RadioGroup>
 
         </LinearLayout>

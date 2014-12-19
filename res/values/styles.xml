@@ -98,10 +98,12 @@
         <item name="android:layout_width">40dp</item>
         <item name="android:layout_height">40dp</item>
         <item name="android:layout_gravity">center</item>
+        <item name="android:onClick">onClick</item>
     </style>
 
     <style name="Diagnosis.Information">
         <item name="android:background">@color/tile_back</item>
+        <item name="android:onClick">onClick</item>
     </style>
 
     <style name="Diagnosis.RadioGroup"></style>
@@ -114,18 +116,17 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">right</item>
+        <item name="android:button">@drawable/radio</item>
+        <item name="android:layout_margin">2dp</item>
 
-        <item name="android:buttonStyle">@style/radioButtonStyle</item>
-    </style>
-    <style name="radioButtonStyle">
-        <item name="android:layout_width">30dp</item>
-        <item name="android:layout_height">30dp</item>
     </style>
 
     <style name="Diagnosis.AgeRadioGroup.RadioButton">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">right</item>
+        <item name="android:button">@drawable/radio</item>
+        <item name="android:layout_margin">2dp</item>
     </style>
 
     <style name="Diagnosis.RadioGroup.Text" parent="Diagnosis.Title">
@@ -141,6 +142,7 @@
         <item name="android:button">@drawable/empty</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radio_flat</item>
 
     </style>
 

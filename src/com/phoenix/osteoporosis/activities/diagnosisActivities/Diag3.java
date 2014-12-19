@@ -37,6 +37,7 @@ public class Diag3 extends Activity {
             case R.id.diag_info:
                 intent = new Intent(this,DiagInformation.class);
                 intent.putExtra("page",4);
+                startActivity(intent);
                 break;
 
         }
