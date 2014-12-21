@@ -66,7 +66,7 @@
         <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="background information"
+                android:text="اطلاعات پیش زمینه"
                 android:onClick="onClick"
                 android:id="@+id/diag_info"
                 style="@style/Diagnosis.Information"
