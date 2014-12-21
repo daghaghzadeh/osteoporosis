@@ -29,8 +29,7 @@ public class Diag45 extends Activity {
                 startActivity(intent);
                 break;
             case R.id.diag_info_btn:
-                intent = new Intent(this, DiagInformation.class);
-                intent.putExtra("page", 5);
+                intent = new Intent(this, Diag29.class);
 
                 startActivity(intent);
                 break;

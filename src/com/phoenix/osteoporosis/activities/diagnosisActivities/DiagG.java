@@ -9,11 +9,11 @@ import com.phoenix.osteoporosis.R;
 /**
  * Created by phoenix on 12/12/2014.
  */
-public class Diag26 extends Activity {
+public class DiagG extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.diag26);
+        setContentView(R.layout.diagg);
     }
 
     public void onClick(View view) {
@@ -22,27 +22,25 @@ public class Diag26 extends Activity {
         Intent intent = null;
 
         switch (id) {
-            case R.id.diag_i1:
-                intent = new Intent(this, DiagInformation.class);
-                intent.putExtra("page", 27);
-
+            case R.id.diag_yes:
+                intent = new Intent(this, Diag31.class);
                 startActivity(intent);
                 break;
-            case R.id.diag_i2:
+            case R.id.diag_no:
                 intent = new Intent(this, DiagInformation.class);
-                intent.putExtra("page", 28);
-
-                startActivity(intent);
-                break;
-            case R.id.diag_l1:
-            case R.id.diag_l2:
-                intent = new Intent(this, DiagE.class);
-
+                intent.putExtra("page", 44);
                 startActivity(intent);
                 break;
             case R.id.diag_header_back:
                 onBackPressed();
                 break;
+            case R.id.diag_info:
+                intent = new Intent(this,DiagInformation.class);
+                intent.putExtra("page",43);
+                startActivity(intent);
+                break;
+
         }
+
     }
 }

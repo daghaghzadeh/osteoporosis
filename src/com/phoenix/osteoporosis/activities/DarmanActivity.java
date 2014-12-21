@@ -46,6 +46,7 @@ public class DarmanActivity extends Activity {
 
         }
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
     }
 
     public void set_fonts() {

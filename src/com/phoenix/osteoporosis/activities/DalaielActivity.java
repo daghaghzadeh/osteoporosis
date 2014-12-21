@@ -46,6 +46,7 @@ public class DalaielActivity extends Activity {
 
         }
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
     }
 
 

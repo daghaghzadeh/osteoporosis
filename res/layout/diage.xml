@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Diagnosis"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Title"
+                android:text="داروهای پوکی استخوان: حفظ درمان"
+                android:id="@+id/diag_title"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Diagnosis.Content"
+                android:text="از ماه جولای سال 2014 این دارو معرفی شده است. همواره قبل از مصرف اطلاعات تجویز دارو را چک کنید."
+                android:id="@+id/diag_content"
+                />
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+
+                style="@style/Diagnosis.SwitchingButton"
+                android:orientation="horizontal"
+                android:id="@+id/diage_l1"
+                >
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="آلندرونات:"
+                    android:id="@+id/diage_title1"
+                    android:tag="0"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+
+                style="@style/Diagnosis.SwitchingButton"
+                android:orientation="horizontal"
+                android:id="@+id/diage_l2"
+                >
+
+            <TextView
+                    android:tag="0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="دنوسوماب:"
+                    android:id="@+id/diage_title2"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+
+                style="@style/Diagnosis.SwitchingButton"
+                android:orientation="horizontal"
+                android:id="@+id/diage_l3"
+                >
+
+            <TextView
+                    android:tag="0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="رالوکسیفن:"
+                    android:id="@+id/diage_title3"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+
+                style="@style/Diagnosis.SwitchingButton"
+                android:orientation="horizontal"
+                android:id="@+id/diage_l4"
+                >
+
+            <TextView
+                    android:tag="0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تریپاراتید:"
+                    android:id="@+id/diage_title4"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+
+                style="@style/Diagnosis.SwitchingButton"
+                android:orientation="horizontal"
+                android:id="@+id/diage_l5"
+                >
+
+            <TextView
+                    android:tag="0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="زالدرونیک اسید:"
+                    android:id="@+id/diage_title5"
+
+                    />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

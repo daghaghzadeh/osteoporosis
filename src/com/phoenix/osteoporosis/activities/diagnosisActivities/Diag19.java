@@ -27,7 +27,7 @@ public class Diag19 extends Activity {
                 startActivity(intent);
                 break;
             case R.id.diag_more:
-                intent = new Intent(this, Diag19.class);
+                intent = new Intent(this, DiagG.class);
 
                 startActivity(intent);
                 break;

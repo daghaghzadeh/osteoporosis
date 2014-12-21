@@ -63,7 +63,8 @@ public class MainActivity extends Activity {
                 overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
                 break;
             case R.id.main_azmaiesh:
-                intent = new Intent(view.getContext(), FakeActivity.class);
+                intent = new Intent(view.getContext(), ArticleActivity.class);
+                intent.putExtra("id", 62);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_to_right, R.anim.slide_out_to_right);
                 break;

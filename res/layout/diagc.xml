@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Diagnosis"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/Diagnosis"
+            >
+
+        <include
+                layout="@layout/diag_header"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag_title"
+                android:text="دنوسوماب"
+                style="@style/Diagnosis.Title"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag_content"
+                android:text="دنوسوماب"
+                style="@style/Diagnosis.Content"
+                />
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diag_continue"
+                android:text="اطلاعات مربوط به داروهای پوکی استخوان"
+                style="@style/Diagnosis.Yes"
+                />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -39,5 +39,6 @@ public class Global extends Application {
         }
         INFLATER = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
 
+
     }
 }

@@ -2,6 +2,7 @@ package com.phoenix.osteoporosis.activities.diagnosisActivities;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import com.phoenix.osteoporosis.R;
 
@@ -22,6 +23,12 @@ public class DiagInformation extends Activity {
 
 
     }
+
+    public void onClick(View view) {
+
+        onBackPressed();
+    }
+
 
     public String getInfoTitle() {
         String title = "";

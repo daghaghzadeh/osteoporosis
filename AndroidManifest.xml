@@ -59,5 +59,14 @@
                 android:name=".activities.diagnosisActivities.DiagA"
                 android:label="diaga"
                 />
+        <activity android:name=".activities.diagnosisActivities.DiagB"/>
+        <activity android:name=".activities.diagnosisActivities.DiagC"/>
+        <activity android:name=".activities.diagnosisActivities.DiagD"/>
+        <activity android:name=".activities.diagnosisActivities.DiagE"/>
+        <activity android:name=".activities.diagnosisActivities.DiagF"/>
+        <activity android:name=".activities.diagnosisActivities.DiagG"/>
+        <activity android:name=".activities.diagnosisActivities.DiagH"/>
+        <activity android:name=".activities.diagnosisActivities.DiagI"/>
+        <activity android:name=".activities.diagnosisActivities.Diag29"/>
     </application>
 </manifest>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            style="@style/Diagnosis"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Diagnosis"
         >
 
     <LinearLayout
@@ -16,163 +16,126 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 style="@style/Diagnosis.Title"
-                android:text="درمان های فعلی: انتخاب های برای ادامه یا تغییر روش درمانی "
+                android:text="داروهای مختلف: دنوسوماب"
                 android:id="@+id/diag_title"
                 />
 
-        <LinearLayout
-                android:layout_width="fill_parent"
-
-                style="@style/Diagnosis.SwitchingButton"
-                android:orientation="horizontal"
-                android:id="@+id/diag_l1"
-                >
-
-            <Button
-                    android:text="i"
-                    style="@style/Diagnosis.CircleButton"
-                    android:id="@+id/diag_i1"
-                    android:onClick="onClick"
-                    android:visibility="gone"
-
-                    />
-
-
-            <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="بیسفسفنات خوراکی"
-                    android:id="@+id/diag_title1"
-                    android:tag="0"
-
-                    />
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="fill_parent"
-
-                style="@style/Diagnosis.SwitchingButton"
-                android:orientation="horizontal"
-                android:id="@+id/diag_l2"
-                >
-
-            <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="بیسفسفنات وریدی"
-                    android:id="@+id/diag_title2"
-                    android:tag="0"
-
-                    />
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="fill_parent"
-
-                style="@style/Diagnosis.SwitchingButton"
-                android:orientation="horizontal"
-                android:id="@+id/diag_l3"
-                >
-
-            <TextView
-                    android:tag="0"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="دنوسوماب"
-                    android:id="@+id/diag_title3"
-
-                    />
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="fill_parent"
-
-                style="@style/Diagnosis.SwitchingButton"
-                android:orientation="horizontal"
-                android:id="@+id/diag_l4"
-                >
-
-            <Button
-                    android:text="i"
-                    style="@style/Diagnosis.CircleButton"
-                    android:id="@+id/diag_i4"
-                    android:onClick="onClick"
-                    android:visibility="gone"
-
-                    />
-
-            <TextView
-                    android:tag="0"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="تعدیل کننده های انتخابی گیرنده  استروژن (SERM برای مثال رالوکسیفن)"
-                    android:id="@+id/diag_title4"
-
-                    />
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="fill_parent"
-
-                style="@style/Diagnosis.SwitchingButton"
-                android:orientation="horizontal"
-                android:id="@+id/diag_l5"
-                >
-
-            <Button
-                    android:text="i"
-                    style="@style/Diagnosis.CircleButton"
-                    android:id="@+id/diag_i5"
-                    android:onClick="onClick"
-                    android:visibility="gone"
-
-                    />
-
-            <TextView
-                    android:tag="0"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="استرانسیوم رانلات"
-                    android:id="@+id/diag_title5"
-
-                    />
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="fill_parent"
-
-                style="@style/Diagnosis.SwitchingButton"
-                android:orientation="horizontal"
-                android:id="@+id/diag_l6"
-                >
-
-            <Button
-                    android:text="i"
-                    style="@style/Diagnosis.CircleButton"
-                    android:id="@+id/diag_i6"
-                    android:onClick="onClick"
-                    android:visibility="gone"
-
-                    />
-
-            <TextView
-                    android:tag="0"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="تریپاراتید، PTH"
-                    android:id="@+id/diag_title6"
-
-                    />
-        </LinearLayout>
-
-        <Button
+        <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                style="@style/Diagnosis.Button"
-                android:text="اطلاعات درباره داروهای پوکی استخوان"
-                android:id="@+id/diag_info_btn"
-                android:layout_marginTop="5dp"
+                style="@style/Diagnosis.Content"
+                android:text="از ماه جولای سال 2014 این دارو معرفی شده است. همواره قبل از مصرف اطلاعات تجویز دارو را چک کنید."
+                android:id="@+id/diag_content"
                 />
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+
+                style="@style/Diagnosis.SwitchingButton"
+                android:orientation="horizontal"
+                android:id="@+id/diag29_l1"
+                >
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="آلندرونات:"
+                    android:id="@+id/diag29_title1"
+                    android:tag="0"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+
+                style="@style/Diagnosis.SwitchingButton"
+                android:orientation="horizontal"
+                android:id="@+id/diag29_l2"
+                >
+
+            <TextView
+                    android:tag="0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="دنوسوماب:"
+                    android:id="@+id/diag29_title2"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+
+                style="@style/Diagnosis.SwitchingButton"
+                android:orientation="horizontal"
+                android:id="@+id/diag29_l3"
+                >
+
+            <TextView
+                    android:tag="0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="رالوکسیفن:"
+                    android:id="@+id/diag29_title3"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+
+                style="@style/Diagnosis.SwitchingButton"
+                android:orientation="horizontal"
+                android:id="@+id/diag29_l4"
+                >
+
+            <TextView
+                    android:tag="0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="استرانسیوم رانلات:"
+                    android:id="@+id/diag29_title4"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+
+                style="@style/Diagnosis.SwitchingButton"
+                android:orientation="horizontal"
+                android:id="@+id/diag29_l5"
+                >
+
+            <TextView
+                    android:tag="0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تریپاراتید:"
+                    android:id="@+id/diag29_title5"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+
+                style="@style/Diagnosis.SwitchingButton"
+                android:orientation="horizontal"
+                android:id="@+id/diag29_l6"
+                >
+
+            <TextView
+                    android:tag="0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="زالدرونیک اسید:"
+                    android:id="@+id/diag29_title6"
+
+                    />
+        </LinearLayout>
+
 
     </LinearLayout>
 
