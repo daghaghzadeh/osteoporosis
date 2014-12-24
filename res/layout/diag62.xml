@@ -387,7 +387,7 @@
                 android:layout_height="wrap_content"
                 style="@style/Diagnosis.Title"
                 android:id="@+id/diag62_result"
-                android:text="شکم و روده:"
+                android:text=""
                 />
 
     </LinearLayout>
